@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3A15C1AE-EA53-43DE-A7CE-72B1FAC550E5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>rpDynTargetDevice2014</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F7CD0CA99D6F266619EEFA3D9B854B531C7D6DDC</key>
+		<string>https://github.com/ristopuukko/rpDynTargetDevice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>rpDynTargetDevice2014.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F7CD0CA99D6F266619EEFA3D9B854B531C7D6DDC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ristopuukko/rpDynTargetDevice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F7CD0CA99D6F266619EEFA3D9B854B531C7D6DDC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F7CD0CA99D6F266619EEFA3D9B854B531C7D6DDC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rpDynTargetDevice</string>
+		</dict>
+	</array>
+</dict>
+</plist>

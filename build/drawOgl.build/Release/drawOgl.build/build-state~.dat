@@ -1,0 +1,30 @@
+TdrawOgl
+v7
+r1
+cCheck dependencies
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Release/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Release/drawOgl.bundle
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Release/drawOgl.build/Script-8A7F063408688F870064D097.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/usr/local/lib/$PRODUCT_NAME.bundle
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies361263424#361263424#0(73"[BEROR]No architectures to compile for (ARCHS=i386, VALID_ARCHS=x86_64).1(4@65"No architectures to compile for (ARCHS=i386, VALID_ARCHS=x86_64).361263424#18446744073709551615#0#0(1@0"0(0#1#0"8611891904#0"0#
+
+CPhaseScriptExecution "Run Script" /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Release/drawOgl.build/Script-8A7F063408688F870064D097.sh
+r0
+

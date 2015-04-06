@@ -1,0 +1,996 @@
+TrpDynTargetDevice
+v7
+r0
+t375040987.655514
+cCheck dependencies
+cProcessPCH++ /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h.gch /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cMasterObjectLink /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o
+cLd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle normal x86_64
+cPhaseScriptExecution "Run Script" /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Script-8A7F063408688F870064D097.sh
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/M3dView.h
+c000000004C3C259E00000000000041E5
+t1279010206
+s16869
+i<maya/MStatus.h>
+i<maya/MObject.h>
+i<maya/MColor.h>
+i<maya/MNativeWindowHdl.h>
+i<OpenGL/gl.h>
+i<AGL/agl.h>
+i<agl.h>
+i<GL/glx.h>
+i<X11/Intrinsic.h>
+i"winsock2.h"
+i"windows.h"
+i<gl/Gl.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MApiVersion.h
+c000000004C3C259E000000000000096B
+t1279010206
+s2411
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MArrayDataBuilder.h
+c000000004C3C259E000000000000102D
+t1279010206
+s4141
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataHandle.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MArrayDataHandle.h
+c000000004C3C259E00000000000011DF
+t1279010206
+s4575
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<string.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataBuilder.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MBoundingBox.h
+c000000004C3C259E0000000000000DB8
+t1279010206
+s3512
+i<maya/MTypes.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MColor.h
+c000000004C3C259E00000000000027FA
+t1279010206
+s10234
+i<maya/MTypes.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDGContext.h
+c000000004C3C259E0000000000000E68
+t1279010206
+s3688
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDagPath.h
+c000000004C3C259E000000000000175E
+t1279010206
+s5982
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDataBlock.h
+c000000004C3C259E000000000000114C
+t1279010206
+s4428
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataHandle.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDataHandle.h
+c000000004C3C259E0000000000002B93
+t1279010206
+s11155
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<string.h>
+i<maya/MFnNumericData.h>
+i<maya/MFnData.h>
+i<maya/MTypeId.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDistance.h
+c000000004C3C259E0000000000000FFA
+t1279010206
+s4090
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDoubleArray.h
+c000000004C3C259E0000000000001177
+t1279010206
+s4471
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MEulerRotation.h
+c000000004C3C259E0000000000001C50
+t1279010206
+s7248
+i<maya/MTypes.h>
+i<maya/MTransformationMatrix.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MEvent.h
+c000000004C3C259E0000000000001476
+t1279010206
+s5238
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFloatVector.h
+c000000004C3C259E0000000000004196
+t1279010206
+s16790
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+i<math.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFn.h
+c000000004C3C259E0000000000009B20
+t1279010206
+s39712
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnAttribute.h
+c000000004C3C259E00000000000019F0
+t1279010206
+s6640
+i<maya/MFnBase.h>
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnBase.h
+c000000004C3C259E0000000000001F19
+t1279010206
+s7961
+i<maya/MFn.h>
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDagNode.h
+c000000004C3C259E0000000000002222
+t1279010206
+s8738
+i<maya/MFnDependencyNode.h>
+i<maya/MObject.h>
+i<stdlib.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnData.h
+c000000004C3C259E0000000000001599
+t1279010206
+s5529
+i<maya/MFnBase.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDependencyNode.h
+c000000004C3C259E000000000000293A
+t1279010206
+s10554
+i<maya/MFnBase.h>
+i<maya/MTypeId.h>
+i<maya/MString.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDistanceManip.h
+c000000004C3C259E0000000000000F0C
+t1279010206
+s3852
+i<maya/MFnBase.h>
+i<maya/MFnManip3D.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnFreePointTriadManip.h
+c000000004C3C259E0000000000000FB8
+t1279010206
+s4024
+i<maya/MFnBase.h>
+i<maya/MFnManip3D.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnManip3D.h
+c000000004C3C259E0000000000000E11
+t1279010206
+s3601
+i<maya/MFnTransform.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnMessageAttribute.h
+c000000004C3C259E0000000000000D15
+t1279010206
+s3349
+i<maya/MFnAttribute.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnNumericAttribute.h
+c000000004C3C259E0000000000001BBE
+t1279010206
+s7102
+i<maya/MFnAttribute.h>
+i<maya/MFnNumericData.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnNumericData.h
+c000000004C3C259E0000000000001B1A
+t1279010206
+s6938
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnPlugin.h
+c000000004C3C259E0000000000003307
+t1279010206
+s13063
+i<maya/MFnBase.h>
+i<maya/MApiVersion.h>
+i<maya/MPxNode.h>
+i<maya/MPxData.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnStringData.h
+c000000004C3C259E0000000000000DCF
+t1279010206
+s3535
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnTransform.h
+c000000004C3C259E0000000000003377
+t1279010206
+s13175
+i<maya/MFnDagNode.h>
+i<maya/MTransformationMatrix.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnUnitAttribute.h
+c000000004C3C259E00000000000019C7
+t1279010206
+s6599
+i<maya/MFnAttribute.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MGLdefinitions.h
+c000000004C3C259E0000000000017900
+t1279010206
+s96512
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MGlobal.h
+c000000004C3C259E00000000000036C5
+t1279010206
+s14021
+i<maya/MIntArray.h>
+i<maya/MDoubleArray.h>
+i<maya/MString.h>
+i<maya/MStringArray.h>
+i<maya/MObject.h>
+i<maya/MStatus.h>
+i<maya/MSelectionMask.h>
+i<maya/MTransformationMatrix.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIOStream.h
+c000000004C3C259E0000000000000A40
+t1279010206
+s2624
+i<maya/MIOStreamFwd.h>
+i<iostream>
+i<iostream.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIOStreamFwd.h
+c000000004C3C259E00000000000008D8
+t1279010206
+s2264
+i<iosfwd>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIntArray.h
+c000000004C3C259E0000000000000F89
+t1279010206
+s3977
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MItDependencyNodes.h
+c000000004C3C259E0000000000001019
+t1279010206
+s4121
+i<maya/MObject.h>
+i<maya/MStatus.h>
+i<maya/MIntArray.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MManipData.h
+c000000004C3C259E0000000000000E0B
+t1279010206
+s3595
+i<maya/MStatus.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MMatrix.h
+c000000004C3C259E000000000000182E
+t1279010206
+s6190
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MNativeWindowHdl.h
+c000000004C3C259E0000000000000B9D
+t1279010206
+s2973
+i<maya/MTypes.h>
+i<X11/Intrinsic.h>
+i"winsock2.h"
+i"windows.h"
+i<Carbon/Carbon.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MObject.h
+c000000004C3C259E0000000000001FEE
+t1279010206
+s8174
+i<maya/MFn.h>
+i<maya/MTypes.h>
+i<stdio.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MObjectArray.h
+c000000004C3C259E0000000000000EBB
+t1279010206
+s3771
+i<maya/MObject.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPlug.h
+c000000004C3C259E00000000000041E4
+t1279010206
+s16868
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDGContext.h>
+i<maya/MObject.h>
+i<maya/MIntArray.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPlugArray.h
+c000000004C3C259E0000000000000EB1
+t1279010206
+s3761
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPoint.h
+c000000004C3C259E00000000000038C0
+t1279010206
+s14528
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+i<maya/MVector.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxCommand.h
+c000000004C3C259E0000000000001A9F
+t1279010206
+s6815
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MString.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxContext.h
+c000000004C3C259E0000000000001DF6
+t1279010206
+s7670
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MEvent.h>
+i<maya/MString.h>
+i<maya/MSyntax.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxData.h
+c000000004C3C259E00000000000019B5
+t1279010206
+s6581
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxLocatorNode.h
+c000000004C3C259E0000000000001C7C
+t1279010206
+s7292
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MPxNode.h>
+i<maya/M3dView.h>
+i<maya/MBoundingBox.h>
+i<maya/M3dView.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxManipContainer.h
+c000000004C3C259E0000000000002729
+t1279010206
+s10025
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MPxNode.h>
+i<maya/MPlug.h>
+i<maya/MPoint.h>
+i<maya/MVector.h>
+i<maya/MTypeId.h>
+i<maya/MString.h>
+i<maya/M3dView.h>
+i<maya/MDagPath.h>
+i<maya/MObjectArray.h>
+i<maya/MManipData.h>
+i<maya/MPxManipulatorNode.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxManipulatorNode.h
+c000000004C3C259E000000000000192F
+t1279010206
+s6447
+i<maya/MPxNode.h>
+i<maya/MTypes.h>
+i<maya/MGLdefinitions.h>
+i<maya/M3dView.h>
+i<maya/MDagPath.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxNode.h
+c000000004C3C259E0000000000002385
+t1279010206
+s9093
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MTypeId.h>
+i<maya/MDataHandle.h>
+i<maya/MDataBlock.h>
+i<maya/MPlug.h>
+i<maya/MString.h>
+i<maya/MDGContext.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxSelectionContext.h
+c000000004C3C259E0000000000001218
+t1279010206
+s4632
+i<maya/MPxContext.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MQuaternion.h
+c000000004C3C259E0000000000001987
+t1279010206
+s6535
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MTransformationMatrix.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MSelectionMask.h
+c000000004C3C259E0000000000001AAB
+t1279010206
+s6827
+i<maya/MObject.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MStatus.h
+c000000004C3C259E00000000000029CC
+t1279010206
+s10700
+i<maya/MTypes.h>
+i<maya/MIOStream.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MString.h
+c000000004C3C259E0000000000001C31
+t1279010206
+s7217
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MStringArray.h
+c000000004C3C259E000000000000107B
+t1279010206
+s4219
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MSyntax.h
+c000000004C3C259E0000000000001AA9
+t1279010206
+s6825
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTime.h
+c000000004C3C259E0000000000001D8B
+t1279010206
+s7563
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTransformationMatrix.h
+c000000004C3C259E0000000000002C09
+t1279010206
+s11273
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTypeId.h
+c000000004C3C259E000000000000137F
+t1279010206
+s4991
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTypes.h
+c000000004C3C259E0000000000003EB9
+t1279010206
+s16057
+i<winsock2.h>
+i"windows.h"
+i<sys/types.h>
+i<sys/stat.h>
+i<basetsd.h>
+i<inttypes.h>
+i<stdarg.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MVector.h
+c000000004C3C259E0000000000003F5F
+t1279010206
+s16223
+i<maya/MTypes.h>
+i<maya/MTransformationMatrix.h>
+i<math.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h
+c000000004C3C259E0000000000000C07
+t1279010206
+s3079
+i<AvailabilityMacros.h>
+i<sys/param.h>
+i<CoreServices/CoreServices.h>
+
+N/Applications/Autodesk/maya2011/devkit/plug-ins/api_macros.h
+c000000004C3C25960000000000000E54
+t1279010198
+s3668
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004CC3CD1000000000000010DD
+t1287900432
+s4317
+
+N/System/Library/Frameworks/AGL.framework/Headers/agl.h
+c000000004CC42B120000000000005074
+t1287924498
+s20596
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004CC41EA700000000000005FF
+t1287921319
+s1535
+
+N/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004CC3FFFE0000000000000401
+t1287913470
+s1025
+
+N/System/Library/Frameworks/GLUT.framework/GLUT
+c000000004A12475500000000001A2920
+t1242711893
+s1714464
+
+N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004CC42BAC000000000000578C
+t1287924652
+s22412
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004BD2501F0000000000025B59
+t1272074271
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004EDEBFD00000000000043360
+t1323220944
+s275296
+
+N/Users/Shared/Autodesk/maya/2011/plug-ins/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle
+t1353348187
+s98504
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o
+t1353348187
+s100232
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o
+t1353348187
+s201068
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o
+t1353348183
+s205728
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o
+t1353348187
+s173288
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.LinkFileList
+c0000000050AA745400000000000000C9
+t1353348180
+s201
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o
+t1353348186
+s320392
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o
+t1353348185
+s233624
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Script-8A7F063408688F870064D097.sh
+c0000000050AA745400000000000000C6
+t1353348180
+s198
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mathUtils.h
+c000000004F7BF8130000000000001EAC
+t1333524499
+s7852
+i"mvl/vec.h"
+i"mvl/mat.h"
+i"mvl/quat.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mvl/base.h
+c000000004F7BF812000000000000045A
+t1333524498
+s1114
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mvl/mat.h
+c000000004F7BF8120000000000003F20
+t1333524498
+s16160
+i<cmath>
+i"base.h"
+i"traits.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mvl/quat.h
+c000000004F7BF81200000000000026B3
+t1333524498
+s9907
+i<limits>
+i"vec.h"
+i"mat.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mvl/traits.h
+c000000004F7BF8120000000000000BF2
+t1333524498
+s3058
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/mvl/vec.h
+c000000004F7BF8120000000000003703
+t1333524498
+s14083
+i<iostream>
+i<cmath>
+i"base.h"
+i"traits.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp
+c0000000050AA6E6300000000000036CF
+t1353346659
+s14031
+i"oglRoutines.h"
+i"rpDynTargetDevice.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.h
+c0000000050AA6E6300000000000000E7
+t1353346659
+s231
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GLUT/glut.h>
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp
+c0000000050AA70750000000000000B41
+t1353347189
+s2881
+i<maya/MFnPlugin.h>
+i"rpDynTargetDevice.h"
+i"rpDynTargetDeviceManip.h"
+i"randomize.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp
+c0000000050AA6E63000000000000045B
+t1353346659
+s1115
+i"randomize.h"
+i<ctime>
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.h
+c0000000050AA7256000000000000024A
+t1353347670
+s586
+i"rpDynTargetDevice.h"
+i<maya/MPxCommand.h>
+i<maya/MItDependencyNodes.h>
+i<maya/MFnDependencyNode.h>
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp
+c0000000050AA72E900000000000078E1
+t1353347817
+s30945
+i"RPDYNTARGETDEVICE.h"
+i"RPDYNTARGETDEVICEManip.h"
+i"mathUtils.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.h
+c0000000050AA729D00000000000016EA
+t1353347741
+s5866
+i<maya/MPxLocatorNode.h>
+i<maya/MFnNumericAttribute.h>
+i<maya/MFnStringData.h>
+i<maya/MTypeId.h>
+i<maya/MPlug.h>
+i<maya/MDataBlock.h>
+i<maya/MDataHandle.h>
+i<maya/MDistance.h>
+i<maya/MGlobal.h>
+i<maya/MIOStream.h>
+i<maya/MString.h>
+i<maya/MTypeId.h>
+i<maya/MPlug.h>
+i<maya/MPlugArray.h>
+i<maya/MVector.h>
+i<maya/MFloatVector.h>
+i<maya/MDataBlock.h>
+i<maya/MDataHandle.h>
+i<maya/MColor.h>
+i<maya/M3dView.h>
+i<maya/MDistance.h>
+i<maya/MFnUnitAttribute.h>
+i<maya/MFnMessageAttribute.h>
+i<maya/MMatrix.h>
+i<maya/MFn.h>
+i<maya/MPxNode.h>
+i<maya/MPxManipContainer.h>
+i<maya/MFnDistanceManip.h>
+i<maya/MFnFreePointTriadManip.h>
+i<maya/MPxContext.h>
+i<maya/MPxSelectionContext.h>
+i<maya/MQuaternion.h>
+i<maya/MEulerRotation.h>
+i<maya/MFnNumericData.h>
+i<maya/MManipData.h>
+i<maya/MTime.h>
+i<cmath>
+i<vector>
+i<api_macros.h>
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp
+c0000000050AA70920000000000001BE3
+t1353347218
+s7139
+i"rpDynTargetDeviceManip.h"
+
+N/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.h
+c0000000050AA70A0000000000000069A
+t1353347232
+s1690
+i"rpDynTargetDevice.h"
+i<maya/MDistance.h>
+i<maya/MString.h>
+i<maya/MTypeId.h>
+i<maya/MPlug.h>
+i<maya/MVector.h>
+i<maya/MDataBlock.h>
+i<maya/MDataHandle.h>
+i<maya/MColor.h>
+i<maya/M3dView.h>
+i<maya/MFnPlugin.h>
+i<maya/MFnUnitAttribute.h>
+i<maya/MFn.h>
+i<maya/MPxNode.h>
+i<maya/MPxManipContainer.h>
+i<maya/MFnDistanceManip.h>
+i<maya/MPxContext.h>
+i<maya/MPxSelectionContext.h>
+i<maya/MFnNumericData.h>
+i<maya/MManipData.h>
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/X11/Intrinsic.h
+c000000004CC416DA000000000000F805
+t1287919322
+s63493
+
+N/usr/include/inttypes.h
+c000000004BBD2CE900000000000027D1
+t1270689001
+s10193
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/usr/include/sys/param.h
+c000000004CC3DE6700000000000027BE
+t1287904871
+s10174
+
+N/usr/include/sys/stat.h
+c000000004CC3DE680000000000004A1D
+t1287904872
+s18973
+
+N/usr/include/sys/types.h
+c000000004CC3DE680000000000002905
+t1287904872
+s10501
+
+N/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bkqfgbtzteietvhftdbmmzoyorye/OpenMayaMac.h.gch
+t1353347571
+s24443024
+
+N/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h.gch
+t1353348182
+s24443024
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies375040980#375040980#0(0"0(0#1#0"8618753504#0"0#
+
+CCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040985.508772
+e375040987.018861
+r1
+xCompileC
+xbuild/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@106"Compile /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp375040985#375040987#0(0"0(0#0#98"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp8608487392#1610"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/oglRoutines.cpp -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o0#
+
+CCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040982.322578
+e375040983.718736
+r1
+xCompileC
+xbuild/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@105"Compile /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp375040982#375040983#0(0"0(0#0#97"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp8610668928#1608"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/pluginMain.cpp -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o0#
+
+CCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040986.535278
+e375040987.562441
+r1
+xCompileC
+xbuild/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@104"Compile /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp375040986#375040987#0(0"0(0#0#96"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp8617896096#1606"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/randomize.cpp -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o0#
+
+CCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040982.321127
+e375040986.535164
+r1
+xCompileC
+xbuild/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp375040982#375040986#0(0"0(0#0#104"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp8617281696#1622"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.cpp -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o0#
+
+CCompileC build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040983.718852
+e375040985.508589
+r1
+xCompileC
+xbuild/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@117"Compile /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp375040983#375040985#0(0"0(0#0#109"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp8600006432#1632"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDeviceManip.cpp -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o0#
+
+CLd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle normal x86_64
+s375040987.575971
+e375040987.629591
+r1
+xLd
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle
+xnormal
+xx86_64
+lSLF07#2@126"Link /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle375040987#375040987#0(0"0(0#0#0"8610253760#949"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    /Developer/usr/bin/g++-4.2 -arch x86_64 -bundle -L/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -L/Applications/Autodesk/maya2011/Maya.app/Contents/MacOS -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -filelist /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.LinkFileList -lOpenMaya -lFoundation -Wl,-executable_path,/Applications/Autodesk/maya2011/Maya.app/Contents/MacOS -lOpenMaya -lOpenMayaFX -lOpenMayaUI -lFoundation -framework AGL -framework OpenGL -framework OpenGL -framework GLUT -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle0#
+
+CMasterObjectLink /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o
+s375040987.562559
+e375040987.575849
+r1
+xMasterObjectLink
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o
+lSLF07#2@205"Link /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o375040987#375040987#0(0"0(0#0#200"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o8617397920#1255"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    /Developer/usr/bin/ld -r -arch x86_64 /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/pluginMain.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDeviceManip.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/oglRoutines.o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/randomize.o -o /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/rpDynTargetDevice.bundle-x86_64-master.o0#
+
+CPhaseScriptExecution "Run Script" /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Script-8A7F063408688F870064D097.sh
+s375040987.629718
+e375040987.655453
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Script-8A7F063408688F870064D097.sh
+ocp: /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle and /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle are identical (not copied).
+lSLF07#2@36"Run custom shell script 'Run Script'375040987#375040987#0(280"cp: /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle and /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle are identical (not copied).1(13@280"cp: /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle and /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle are identical (not copied).375040987#0#280#0(1@0"0(0#0#0"8617921408#18292"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER ristopuukko    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build    setenv BUILD_ROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build    setenv BUILD_STYLE Default    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default    setenv CACHE_ROOT /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Default    setenv CONFIGURATION_BUILD_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default    setenv CONFIGURATION_TEMP_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/rpDynTargetDevice.dst    setenv DWARF_DSYM_FILE_NAME rpDynTargetDevice.bundle.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default    setenv DYLIB_INSTALL_NAME_BASE /Users/Shared/Autodesk/maya/2011/plug-ins/    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLE_EXTENSION bundle    setenv EXECUTABLE_NAME rpDynTargetDevice.bundle    setenv EXECUTABLE_PATH rpDynTargetDevice.bundle    setenv EXECUTABLE_SUFFIX .bundle    setenv FILE_LIST /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/FixedFiles    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME rpDynTargetDevice.bundle    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h    setenv GCC_PREPROCESSOR_DEFINITIONS "MAC_PLUGIN _BOOL REQUIRE_IOSTREAM"    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE YES    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include\" /Applications/Autodesk/maya2011/devkit/plug-ins /Applications/Autodesk/maya2011/devkit/include/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PREPROCESS NO    setenv INSTALL_DIR /tmp/rpDynTargetDevice.dst/Users/Shared/Autodesk/maya/2011/plug-ins/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER ristopuukko    setenv INSTALL_PATH /Users/Shared/Autodesk/maya/2011/plug-ins/    setenv INSTALL_ROOT /tmp/rpDynTargetDevice.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DYLIB_INSTALL_NAME /Users/Shared/Autodesk/maya/2011/plug-ins/rpDynTargetDevice.bundle    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice-LinkMap-normal-x86_64.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default\" /Applications/Autodesk/maya2011/Maya.app/Contents/MacOS"    setenv LIBRARY_STYLE BUNDLE    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal/x86_64/rpDynTargetDevice.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10K549    setenv MAC_OS_X_VERSION_ACTUAL 1068    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0608    setenv MAYA_DIRECTORY /Applications/Autodesk/maya2011    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Objects-normal    setenv OBJROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-lOpenMaya -lFoundation -Wl,-executable_path,/Applications/Autodesk/maya2011/Maya.app/Contents/MacOS -lOpenMaya -lOpenMayaFX -lOpenMayaUI -lFoundation -framework AGL -framework OpenGL"    setenv PACKAGE_TYPE com.apple.package-type.mach-o-dylib    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2518    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH /usr/local/include    setenv PRODUCT_NAME rpDynTargetDevice    setenv PRODUCT_SETTINGS_PATH     setenv PRODUCT_TYPE com.apple.product-type.library.dynamic    setenv PROFILING_CODE NO    setenv PROJECT rpDynTargetDevice    setenv PROJECT_DERIVED_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/DerivedSources    setenv PROJECT_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv PROJECT_FILE_PATH /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/rpDynTargetDevice.xcodeproj    setenv PROJECT_NAME rpDynTargetDevice    setenv PROJECT_TEMP_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build    setenv PUBLIC_HEADERS_FOLDER_PATH /usr/local/include    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/ResourceManagerResources    setenv REZ_EXECUTABLE YES    setenv REZ_OBJECTS_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPT_INPUT_FILE_0 /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/rpDynTargetDevice.bundle    setenv SCRIPT_INPUT_FILE_COUNT 1    setenv SCRIPT_OUTPUT_FILE_0 "/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/$PRODUCT_NAME.bundle"    setenv SCRIPT_OUTPUT_FILE_1 "/Users/Shared/Autodesk/maya/2011/plug-ins/$PRODUCT_NAME.bundle"    setenv SCRIPT_OUTPUT_FILE_COUNT 2    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 10K549    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/DerivedSources    setenv SHARED_PRECOMPS_DIR /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv SRCROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE debugging    setenv SYMBOL_REPOSITORY_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/SymbolRepositories    setenv SYMROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME rpDynTargetDevice    setenv TARGET_BUILD_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default    setenv TARGET_NAME rpDynTargetDevice    setenv TARGET_TEMP_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build    setenv TEMP_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build    setenv TEMP_FILES_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build    setenv TEMP_FILE_DIR /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build    setenv TEMP_ROOT /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build    setenv UID 501    setenv UNSTRIPPED_PRODUCT NO    setenv USER ristopuukko    setenv USER_APPS_DIR /Users/ristopuukko/Applications    setenv USER_LIBRARY_DIR /Users/ristopuukko/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS x86_64    setenv VERBOSE_PBXCP NO    setenv VERSION_INFO_BUILDER ristopuukko    setenv VERSION_INFO_FILE rpDynTargetDevice_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:rpDynTargetDevice  PROJECT:rpDynTargetDevice-\""    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2518    setenv XCODE_VERSION_ACTUAL 0400    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0400    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/Script-8A7F063408688F870064D097.sh0#
+
+CProcessPCH++ /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bkqfgbtzteietvhftdbmmzoyorye/OpenMayaMac.h.gch /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040369.579187
+e375040371.230870
+r1
+xProcessPCH++
+x/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bkqfgbtzteietvhftdbmmzoyorye/OpenMayaMac.h.gch
+x/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Precompile /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h375040369#375040371#0(0"0(0#0#65"/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h3472945436609556480#1348"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -c /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h -o /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bkqfgbtzteietvhftdbmmzoyorye/OpenMayaMac.h.gch0#
+
+CProcessPCH++ /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h.gch /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+s375040980.714377
+e375040982.320945
+r1
+xProcessPCH++
+x/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h.gch
+x/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Precompile /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h375040980#375040982#0(0"0(0#0#65"/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h8619565760#1398"    cd /Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/rpDynTargetDevice.hmap -F/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/Default/include -I/Applications/Autodesk/maya2011/devkit/plug-ins -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/rpDynTargetDevice/rpDynTargetDevice/build/rpDynTargetDevice.build/Default/rpDynTargetDevice.build/DerivedSources -c /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h -o /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-bldrefmapbaidjgrqkqxhzlkiaer/OpenMayaMac.h.gch0#
+

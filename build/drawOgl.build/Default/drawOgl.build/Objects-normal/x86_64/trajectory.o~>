@@ -1,0 +1,20 @@
+In file included from /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.cpp:10:
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:10: error: invalid use of incomplete type 'class trajectory'
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:10: error: forward declaration of 'class trajectory'
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:11: error: 'MVector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:17: error: 'getAttr' was not declared in this scope
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:18: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:19: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:19: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:19: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:20: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:21: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:21: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:21: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:22: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:22: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:22: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:23: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:24: error: 'vector' does not name a type
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:24: error: stray '`' in program
+/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/trajectory.h:24: error: stray '`' in program

@@ -1,0 +1,767 @@
+global string $AEselectedTrgtDevice;
+
+global proc AE_create_rpDynTargetDevice_rigid_list( string $nodeName ) {
+	global string $AE_rpDynTargetDevice_selected_list;
+	string $mainListName = ("AEdynTargetDevice"+"mainList");
+	//print($nodeName + " " + $AE_rpDynTargetDevice_selected_list + "\n");
+	textScrollList -e -ra $mainListName;
+	string $inputs[] = `listConnections $nodeName`;
+	string $i;
+	for($i in $inputs)
+		textScrollList -e -a $i $mainListName;
+} 
+
+
+global proc AE_dynTraj_add_rigids( string $nodeName ) {
+	//disconnect old dRigids
+	string $conns[] = `listConnections -c true -p true $nodeName`;
+	int $i=0;
+	for ($i=0; $i<size($conns); $i+=2) 
+		disconnectAttr $conns[$i+1] $conns[$i];
+	
+	// done
+
+	string $sel[] = `ls -sl`;
+	int $selsize = size($sel);
+	string $r;
+	string $rel[] = `listRelatives -ad $sel`;
+	int $n=0;
+	for( $r in $rel ) {
+		//print($r + " : ");
+		string $type = `nodeType $r`;
+		//print( $type + "\n");
+		if ($type == "dRigidBody") {
+			connectAttr -f ($r + ".message") ($nodeName + ".inputRigids[" + $n +"]"); 
+			$n++;
+		}	
+	}
+	
+	AE_create_rpDynTargetDevice_rigid_list($nodeName);
+	
+	print("Connected " + $n + " dRigidBody nodes to " + $nodeName + "\n");
+	
+}
+
+global proc AE_dynTraj_remove_rigids( string $nodeName   ) {
+	global string $AE_rpDynTargetDevice_selected_list;
+	print( "dynTrajRemoveRigids -> Node = " + $nodeName + " " + $AE_rpDynTargetDevice_selected_list + "\n" );
+	int $idx[] = `textScrollList -q -sii $AE_rpDynTargetDevice_selected_list`;
+	string $sels[] = `textScrollList -q -si $AE_rpDynTargetDevice_selected_list`;
+	string $dRigids[] = `listRelatives -s $sels`;
+	//print("selected index(es) = \n");
+	//print($idx);
+	string $conns[] = `listConnections -d 1 -s 0 -c true -sh true -p true $dRigids[0]`;
+	//print($conns[0] + " -> " + $conns[1] + "\n");
+	//print($idx[0] + "\n");
+	disconnectAttr $conns[0] $conns[1];
+	textScrollList -e -rii $idx[0] $AE_rpDynTargetDevice_selected_list ;
+	//gmatch 
+}
+
+
+
+global proc AE_refresh_dyn( string $attribute   ) {  
+	global string $AEselectedTrgtDevice;
+	string $buffer[];
+	tokenize( $attribute, ".", $buffer);
+	string $nodeName = $buffer[0];
+	$AEselectedTrgtDevice = $nodeName;
+	
+	print($nodeName + " " + $attribute + "\n");
+    
+    setUITemplate -pst attributeEditorTemplate;
+
+    columnLayout ("trgtDevColumn");
+    
+    setParent ..;
+    
+    setUITemplate -ppt;
+    
+    AE_create_rpDynTargetDevice_rigid_list( $nodeName );
+
+    AE_refresh_dyn_repeat( $nodeName );
+
+/*    rowLayout -nc 2
+        -columnWidth 1 80
+        -columnWidth 2 120;
+		columnLayout ;
+			button -w 80 -l "Add" -c ("AE_dynTraj_add_rigids(\"" + $nodeName + "\")");
+			button -w 80 -l "Remove"-c ("AE_dynTraj_remove_rigids(\"" + $nodeName + "\")");
+			setParent..;
+		 $AE_rpdrawogl_selected_list = `textScrollList -ams -w 160 -numberOfRows 8`;
+
+	print($AEselectedTrgtDevice);
+*/
+}
+  
+global proc AE_refresh_dyn_repeat(string $attribute  ){  
+	global string $AEselectedTrgtDevice;
+	string $buffer[];
+
+	tokenize( $attribute, ".", $buffer);
+	string $nodeName = $buffer[0];
+    
+    $AEselectedTrgtDevice = $nodeName;
+    
+    setUITemplate -pst attributeEditorTemplate;
+    
+    	if (!`columnLayout -ex trgtDevColumn`)
+	{
+		setUITemplate -pst attributeEditorTemplate;
+		columnLayout trgtDevColumn;
+		setUITemplate -ppt;
+	}
+
+    setParent trgtDevColumn;
+    string $parent = `setParent -q`;
+    
+    AEeditTargetDeviceObjectList( $nodeName );
+    
+    // Go back to the column.
+    //
+    setParent ..;
+	
+    setUITemplate -ppt;
+	
+    //print( "refreshDynRepeat -> attribute = " + $attribute + "\n" );
+    //AE_refresh_rpDynTargetDevice_rigid_list($nodeName);
+    //print($AE_rpDynTargetDevice_selected_list);
+} 
+	
+global proc AErpDynTargetDeviceTemplate( string $nodeName )
+{
+	editorTemplate -beginScrollLayout;
+
+		editorTemplate -beginLayout "target device basic attributes" -collapse 0;
+			editorTemplate -addControl radius;
+			editorTemplate -addControl trajectoryApex;
+			editorTemplate -addControl trajectoryThreshold;
+
+			editorTemplate -callCustom "AErpDynTargetDeviceAddShuffleButton"
+						   "AErpDynTargetDeviceReplShuffleButton"
+						   $nodeName;
+
+		editorTemplate -endLayout;
+	
+		//	editorTemplate -suppress maxSpin;
+		//	editorTemplate -suppress minSpin;
+			editorTemplate -suppress maxVel;
+			editorTemplate -suppress minVel;
+            
+		editorTemplate -beginLayout "target device randomizing attributes" -collapse 0;
+			editorTemplate -addControl maxSpin;
+			editorTemplate -addControl minSpin;
+		//	editorTemplate -addControl maxVel;
+		//	editorTemplate -addControl minVel;
+		editorTemplate -endLayout;
+	
+		editorTemplate -beginLayout "target device opengl attributes" -collapse 0;
+			editorTemplate -addControl displayNonActive;
+			editorTemplate -addControl displayPercentage;
+			editorTemplate -addControl curveOpacity;
+			editorTemplate -addControl xray;
+				
+		editorTemplate -endLayout;
+	
+		editorTemplate -beginLayout "Input dynamic objects" -collapse 0;
+			editorTemplate -callCustom "AErpDynTargetDeviceNew"
+						"AErpDynTargetDeviceReplace"
+			 			"inputRigids";
+		editorTemplate -endLayout;
+
+		editorTemplate -beginLayout "Outputs" -collapse 0;
+			editorTemplate -addControl output;
+			editorTemplate -addControl oglOutput;
+			
+		editorTemplate -endLayout;
+	
+		//supressed attributes
+		editorTemplate -suppress point;
+		editorTemplate -suppress dRigidArrayConnected;
+		editorTemplate -suppress shuffleValue;
+		editorTemplate -suppress gravity;
+		editorTemplate -suppress shuffleValue;
+		editorTemplate -suppress numCount;
+		editorTemplate -suppress flipGravity;
+		editorTemplate -suppress time;
+		editorTemplate -suppress startTime;
+
+		// include/call base class/node attributes
+			
+		//AEdependNodeTemplate $nodeName;
+	
+		//editorTemplate -beginLayout -cl true;
+
+		editorTemplate -addExtraControls;
+		//editorTemplate -endLayout;
+		
+		
+	editorTemplate -endScrollLayout;
+}
+
+
+global proc AErpDynTargetDeviceAddShuffleButton( string $nodeName )
+{
+
+	rowColumnLayout
+		-numberOfColumns 1
+		-columnWidth 1 98
+		-columnAlign 1 "center"
+		-columnAttach 1 "both" 0
+		-rowAttach 1 "top" 2
+		("AEdynTargetDevice"+"shuffleButtonLayout");
+
+		button
+			-label "Shuffle targets" 
+			-command ("rpShuffleTargets ")
+			-annotation "Shuffle (randomize) current dynamic objects targets." 
+			-width 98
+			("AEdynTargetDevice"+ $nodeName  + "shuffleTargetsButton");
+			
+	setParent ..;
+	
+}
+
+
+global proc AErpDynTargetDeviceReplShuffleButton( string $nodeName )
+{
+
+}
+
+
+global proc AErpDynTargetDeviceNew( string $nodeAttr )
+{
+	
+	print("AErpDynTargetDeviceNew " + $nodeAttr + "\n");
+	
+	string   $buffer[];
+	global string $AEselectedTrgtDevice;
+
+	tokenize($nodeAttr, ".", $buffer);
+	string $nodeName = $buffer[0];
+	$AEselectedTrgtDevice = $nodeName;
+
+	setUITemplate -pst attributeEditorTemplate;
+
+	columnLayout ("trgtDevColumn");
+
+	setParent ..;
+	setUITemplate -ppt;
+
+	AEcreateDynTargetDeviceObjectList( $nodeName );
+
+	AErpDynTargetDeviceReplace( $nodeName );
+}
+
+
+global proc AErpDynTargetDeviceReplace( string $dynTargetDeviceName )
+{
+
+	print("AErpDynTargetDeviceReplace " + $dynTargetDeviceName + "\n");
+	
+	global string $AEselectedTrgtDevice;
+
+	string   $buffer[];
+	tokenize($dynTargetDeviceName, ".", $buffer);
+	string $nodeName = $buffer[0];
+
+	$AEselectedTrgtDevice = $nodeName;
+
+	setUITemplate -pst attributeEditorTemplate;
+
+	if (!`columnLayout -ex trgtDevColumn`)
+	{
+		setUITemplate -pst attributeEditorTemplate;
+		columnLayout trgtDevColumn;
+		setUITemplate -ppt;
+	}
+
+	setParent trgtDevColumn;
+	string $parent = `setParent -q`; 
+
+	AEeditTargetDeviceObjectList( $nodeName );
+
+	// Go back to the column.
+	//
+	setParent ..;
+
+	setUITemplate -ppt;
+}
+
+
+global proc string AErpDynTargetDeviceCmdFlag( string $attrName )
+{
+    string $flag;
+
+    return $flag;
+}
+
+
+proc int isValidDynTargetDeviceObject( string $objectName )
+{
+	if( size($objectName) == 0 )
+		return 0;
+
+	string $temp[];
+	//
+	// First check to see if the selected object
+	// is a transform.
+	//
+	clear($temp);
+	$temp = `ls -type transform $objectName`;
+	if( size($temp) == 0 )
+		return 0;
+
+	//
+	// Now filter out special types derived from transforms
+	//
+	string $invalidTransformTypes[] = 
+	{
+		"pointEmitter",
+		"field",
+		"ikhandle",
+		"ikEffector",
+		"instancer",
+		"joint"
+	};
+	clear($temp);
+	/*
+	$temp = `ls
+		-type pointEmitter
+		-type field
+		-type ikHandle
+		-type ikEffector
+		-type joint
+		-type instancer
+		$objectName`;
+	*/
+	$temp = `listRelatives $objectName`;
+	if( size($temp) < 1 )
+		return 0;
+	if (`nodeType $temp[0]` == "dRigidBody")
+		return 1;
+	return 0;
+}
+
+proc adjustScrollListToSeeItems( string $listName, int $items[] )
+{
+	
+	print("running proc adjustScrollListToSeeItems\n"); 
+	
+	if( size($items) > 0 )
+	{
+		$items = sort($items);
+		int $i;
+		for( $i = 0; $i < size($items); $i ++ )
+		{
+			int $firstSelected = $items[$i];
+			int $numberOfRows = `textScrollList -q -numberOfRows $listName`;
+			if( $firstSelected > $numberOfRows )
+			{
+				int $selectThis = $firstSelected - $numberOfRows + 1;
+				textScrollList -e -showIndexedItem $selectThis $listName;
+			}
+		}
+	}
+}
+
+proc updateList( string $listName, string $node, int $selectedIndices[] )
+{
+	print("running proc updatelist\n");
+	
+	string $currentConnections[] = `listConnections ($node+".inputRigids")`;
+	int $vis = `textScrollList -q -visible $listName`;
+	textScrollList -e -visible 0 $listName;
+	textScrollList -e -removeAll $listName;
+
+	int $i;
+	if( size($currentConnections) == 0 )
+	{
+		textScrollList -e -append " " -width 380 $listName;
+	}
+	else
+	{
+		for( $i = 0; $i < size($currentConnections); $i ++ )
+		{
+			string $newText = ($i + ": " + $currentConnections[$i]);
+			print("Appending " + $newText + "\n");
+			textScrollList -e -append $newText -width 380 $listName;
+		}
+	}
+
+	textScrollList -e -deselectAll $listName;
+	for( $i = 0; $i < size($selectedIndices); $i ++ )
+	{
+		if( $selectedIndices[$i] <= `textScrollList -q -numberOfItems $listName` )
+			textScrollList -e -selectIndexedItem $selectedIndices[$i] $listName;
+	}
+
+	adjustScrollListToSeeItems( $listName, $selectedIndices );
+	textScrollList -e -visible 1 $listName;
+}
+
+proc connectObjectsToDyntargetDevice( string $listName, string $node, string $arrayName[], int $selectedIndices[], string $window )
+{
+	
+	print("proc connectObjectsToDyntargetDevice \n" );
+	print ("$listName = " + $listName + "\n" );
+	print ("$node = " + $node + "\n" );
+	print ("$arrayName = "); print ($arrayName  );
+	print ("$selectedIndices = "); print ( $selectedIndices  );
+	print ("$window = " + $window + "\n" );
+	
+
+	string $currentConnections[] = `listConnections -connections on -plugs on -source on ($node+".inputRigids")`;
+
+	string $currentConnectedBulletEngine[] = `listConnections -connections on -plugs on -source on ($node+".gravity")`;
+
+	int $i;
+	for( $i = 0; $i < size($currentConnections); $i += 2 )
+	{
+		
+		print("disconnectAttr " + $currentConnectedBulletEngine[$i+1] + " " + $currentConnectedBulletEngine[$i] + "\n");
+		disconnectAttr $currentConnectedBulletEngine[$i+1] $currentConnectedBulletEngine[$i];
+	}
+	
+
+	for( $i = 0; $i < size($currentConnections); $i += 2 )
+	{
+		print("disconnectAttr " + $currentConnections[$i+1] + " " + $currentConnections[$i] + "\n");
+		disconnectAttr $currentConnections[$i+1] $currentConnections[$i];
+	}
+
+	string $tempShape[];
+	$tempShape = `listRelatives $arrayName[0]`;
+	string $bulletEngine[] = `listConnections -shapes on ($tempShape[0] + ".solver") `;
+	connectAttr ($bulletEngine[0] + ".gravityY") ( $node + ".gravity");
+	
+	clear($tempShape);
+	for( $i = 0; $i < size($arrayName); $i ++ )
+	{
+		$tempShape = `listRelatives $arrayName[$i]`;
+		print ("connecting : " + $tempShape[0] + ".message -> " + $node + ".inputRigids["+$i+"]\n");
+		connectAttr ($tempShape[0] + ".message") ( $node + ".inputRigids["+$i+"]");
+	}
+
+	textScrollList -e -visible 0 $listName;
+	textScrollList -e -deselectAll $listName;
+	for( $i = 0; $i < size($selectedIndices); $i ++ )
+	{
+		if( $selectedIndices[$i] <= `textScrollList -q -numberOfItems $listName` )
+			textScrollList -e -selectIndexedItem $selectedIndices[$i] $listName;
+	}
+
+	updateList( $listName, $node, $selectedIndices );
+
+}
+
+proc shuffleInstancerConnections( string $listName, string $node, int $from[], int $to[], int $selectedIndices[], int $showFirst, string $window )
+{
+	
+	print("proc shuffleInstancerConnections \n" );
+	print ("$listName = " + $listName + "\n" );
+	print ("$node = " + $node + "\n" );
+	print ("$from = "); print ($from  );
+	print ("$to = "); print ($to  );
+	print ("$selectedIndices = "); print ( $selectedIndices  );
+	print ("$showFirst = " + $showFirst + "\n" );
+	print ("$window = " + $window + "\n" );
+	
+	
+	
+	/*
+	scriptJob -replacePrevious -parent $window -conditionTrue readingFile "";
+
+	string $currentConnections[] = `listConnections -connections on -plugs on -source on ($node+".inputHierarchy")`;
+	string $currentObjectConnections[] = `listConnections ($node+".inputHierarchy")`;
+	int $connectionCount = size($currentConnections) / 2;
+
+	int $i;
+	for( $i = 0; $i < min(size($from),size($to)); $i ++ )
+	{
+		int $f = $from[$i];
+		int $t = $to[$i];
+		if( ( $f < $connectionCount ) && ( $t < $connectionCount ) )
+		{
+			string $fromSrc = $currentConnections[$f*2+1];
+			string $fromDst = $currentConnections[$f*2];
+			string $toSrc = $currentConnections[$t*2+1];
+			string $toDst = $currentConnections[$t*2];
+
+			disconnectAttr $fromSrc $fromDst;
+			disconnectAttr $toSrc $toDst;
+			connectAttr $toSrc $fromDst;
+			connectAttr $fromSrc $toDst;
+
+			$currentConnections[$f*2+1] = $toSrc;
+			$currentConnections[$t*2+1] = $fromSrc;
+			string $temp = $currentObjectConnections[$f];
+			$currentObjectConnections[$f] = $currentObjectConnections[$t];
+			$currentObjectConnections[$t] = $temp;
+		}
+	}
+
+	textScrollList -e -deselectAll $listName;
+	for( $i = 0; $i < min(size($from),size($to)); $i ++ )
+	{
+		int $f = $from[$i];
+		int $t = $to[$i];
+		if( ( $f < $connectionCount ) && ( $t < $connectionCount ) )
+		{
+			string $fromSrc = $currentConnections[$f*2+1];
+			string $fromDst = $currentConnections[$f*2];
+			string $toSrc = $currentConnections[$t*2+1];
+			string $toDst = $currentConnections[$t*2];
+
+			textScrollList -e -removeIndexedItem ($f+1) $listName;
+			textScrollList -e -appendPosition ($f+1) (""+$f+": "+$currentObjectConnections[$f]) $listName;
+			textScrollList -e -removeIndexedItem ($t+1) $listName;
+			textScrollList -e -appendPosition ($t+1) (""+$t+": "+$currentObjectConnections[$t]) $listName;
+		}
+	}
+
+	for( $i = 0; $i < size($selectedIndices); $i ++ )
+	{
+		if( $selectedIndices[$i] <= `textScrollList -q -numberOfItems $listName` )
+			textScrollList -e -selectIndexedItem $selectedIndices[$i] $listName;
+	}
+
+	adjustScrollListToSeeItems( $listName, $selectedIndices );
+
+	scriptJob -replacePrevious -parent $window -attributeChange ($node+".inputHierarchy")
+			("dyntargetDeviceAE_updateListWithCurrentSelection "+$listName+" "+$node) -disregardIndex;
+			
+	*/
+}
+
+proc fillItemList(string $listName, string $node, string $arrayName[], int $selectedIndices[], string $window )
+{
+	print("proc fillItemList\n");
+	print($selectedIndices);
+	connectObjectsToDyntargetDevice( $listName, $node, $arrayName, $selectedIndices, $window );
+}
+
+proc fillItemListFromCurrentSelection(string $listName, string $node, string $arrayName[], string $window )
+{
+	int $selectedIndices[] = `textScrollList -q -selectIndexedItem $listName`;
+	print("proc fillItemListFromCurrentSelection\n");
+	print("$listName " + $listName + "\n");
+	print("$node " + $node + "\n");
+	print("$arrayName) \n"); print($arrayName); print("\n");
+	print("$window " + $window + "\n");
+	print("$selectedIndices\n");
+	print($selectedIndices);
+	connectObjectsToDyntargetDevice( $listName, $node, $arrayName, $selectedIndices, $window );
+}
+
+proc addItemsFromList( string $list[], string $listName, string $node, string $window )
+{
+	print("proc addItemsFromList \n" );
+	print ("$list = "); print ($list  );
+	print ("$listName = " + $listName + "\n" );
+	print ("$node = " + $node + "\n" );
+	print ("$window = " + $window + "\n" );
+
+	
+	string $currentConnections[] = `listConnections ($node + ".inputRigids")`;
+
+	int $listChanged = 0;
+	int $i;
+	for( $i = 0; $i < size($list); $i ++ )
+	{
+		print( "isValidDynTargetDeviceObject( " + $list[$i] + ") = " + isValidDynTargetDeviceObject( $list[$i] ) + "\n");
+		if( isValidDynTargetDeviceObject( $list[$i] ) == 1 )
+		
+		{
+			int $found = 0;
+			int $j;
+			for( $j = 0; $j < size($currentConnections); $j ++ )
+			{
+				if( $list[$i] == $currentConnections[$j] )
+				{
+					$found = 1;
+				}
+			}
+			if( $found == 0 )
+			{
+				$currentConnections[size($currentConnections)] = $list[$i];
+				$listChanged = 1;
+			}
+		}
+	}
+
+	if( $listChanged )
+		fillItemListFromCurrentSelection( $listName, $node, $currentConnections, $window );
+		
+	
+}
+
+global proc targetDeviceAE_addItemsFromSelectionList( string $listName, string $node, string $window )
+//
+// Description:
+//
+//    This proc reads the selection list, and adds the items
+// to the list of objects to be instanced by the instancer
+// $node.
+//
+{
+	
+	print ($listName + "\n");
+	print ($node + "\n");
+	print ($window + "\n");
+	
+	string $selectedItems[] = `ls -sl`;
+	if( size($selectedItems) > 0 )
+		addItemsFromList( $selectedItems, $listName, $node, $window );
+	
+}
+/*
+global proc dyntargetDeviceAE_removeSelectedItems( string $listName, string $node, string $window )
+{
+	
+	
+	string $currentConnections[] = `listConnections ($node+".inputRigids")`;
+	print("proc dyntargetDeviceAE_removeSelectedItems $currentConnections\n");
+	print($currentConnections);
+	int [] = `textScrollList -q -selectIndexedItem $listName`;
+	if( size($selectedIndices) == 0 )
+		return;
+
+	int $i;
+	int $j;
+	string $temp[];
+	for( $i = 0; $i < size($currentConnections); $i ++ )
+	{
+		int $found = 0;
+		for( $j = 0; $j < size($selectedIndices); $j ++ )
+		{
+			if( $selectedIndices[$j] == $i+1 )
+				$found = 1;
+		}
+
+		if( $found == 0 )
+		{
+			$temp[size($temp)] = $currentConnections[$i];
+		} 
+		else 
+		{
+			print("$currentConnections["+ $i +"] = " + $currentConnections[$i] +"\n");
+			string $shape[] = `listRelatives -s $currentConnections[$i]`;
+			print("$shape[0] = " + $shape[0] +"\n");
+			string $dRigid[] = `listConnections -p 1  ($shape[0] + ".msg")`; 
+			print("$dRigid[0] = " + $dRigid[0] + "\n");
+			string $rpDynTargetDeviceConns[] = `listConnections -p 1 $dRigid[0]`; 
+			print("$rpDynTargetDeviceConns[0] = " + $rpDynTargetDeviceConns[0] + "\n");
+			disconnectAttr $rpDynTargetDeviceConns[0] $dRigid[0];
+		}
+	}
+	$currentConnections = $temp;
+	print("$currentConnections\n");
+	print($currentConnections);
+	textScrollList -e -deselectAll $listName;
+	fillItemListFromCurrentSelection( $listName, $node, $currentConnections, $window );
+	
+}
+*/
+
+global proc dyntargetDeviceAE_updateListWithCurrentSelection( string $listName, string $node )
+{
+	int $selectedIndices[] = `textScrollList -q -selectIndexedItem $listName`;
+	print("running proc dyntargetDeviceAE_updateListWithCurrentSelection\n");
+	print ($listName + "\n");
+	print ($node + "\n");
+	print("launching UpdateList();\n");
+	print("with $selectedIndices[] = \n");
+	print($selectedIndices);
+	print("\n");
+	updateList( $listName, $node, $selectedIndices );
+	
+}
+
+global proc AEeditTargetDeviceObjectList( string $dynTargetDevice )
+{
+	
+	
+	
+	string $parent = `setParent -q`;
+
+	string $mainListName = ("AEdynTargetDevice"+"mainList");
+	print($mainListName + "\n");
+	print($dynTargetDevice + "\n");
+ 
+	dyntargetDeviceAE_updateListWithCurrentSelection( $mainListName, $dynTargetDevice );
+
+	setParent ..;
+}
+
+
+global proc AEcreateDynTargetDeviceObjectList( string $dynTargetDevice)
+{
+	string $parent = `setParent -q`;
+
+	global string $AEselectedTrgtDevice;
+
+	rowColumnLayout
+		-columnWidth 1 385
+		-numberOfColumns 1
+		-columnAttach 1 "both" 0
+		// ($dynTargetDevice+"mainLayout");
+		("AEdynTargetDevice"+"mainLayout");
+
+	text
+		-label "dynamic objects" 
+		// ($dynTargetDevice+"$listNameLabel");
+		("AEdynTargetDevice"+"$listNameLabel");
+
+	// string $mainListName = ($dynTargetDevice+"mainList");
+	string $mainListName = ("AEdynTargetDevice"+"mainList");
+	textScrollList
+		-width 385
+		-height 94
+		-allowMultiSelection true
+		-removeAll
+		-annotation "List of the dynamic objects and their indices into the rpDynTargetDevice." 
+		$mainListName;
+
+	//int $scriptJobIndex = 
+	//	`scriptJob -replacePrevious -parent $parent -attributeChange ($AEselectedTrgtDevice+".inputHierarchy")
+	//	("dyntargetDeviceAE_updateListWithCurrentSelection "+$mainListName+" "+$AEselectedTrgtDevice) -disregardIndex`;
+
+	rowColumnLayout
+		-numberOfColumns 4
+		-columnWidth 1 98
+		-columnWidth 2 96
+		-columnWidth 3 95
+		-columnWidth 4 95
+		-columnAlign 1 "center"
+		-columnAlign 2 "center"
+		-columnAlign 3 "center"
+		-columnAlign 4 "center"
+		-columnAttach 1 "both" 0
+		-columnAttach 2 "both" 0
+		-columnAttach 3 "both" 0
+		-columnAttach 4 "both" 0
+		-rowAttach 1 "top" 2
+		-rowAttach 2 "top" 2
+		-rowAttach 3 "top" 2
+		-rowAttach 4 "top" 2
+		("AEdynTargetDevice"+"existingItemButtonLayout");
+
+	button
+		-label "Add Selection" 
+		-command ("targetDeviceAE_addItemsFromSelectionList "+$mainListName+" $AEselectedTrgtDevice "+$parent)
+		-annotation "Add selected object(s) to the list." 
+		-width 98
+		("AEdynTargetDevice"+"addItemsButton");
+
+	/*button
+		-label "Remove Items" 
+		-command ("dyntargetDeviceAE_removeSelectedItems "+$mainListName+" $AEselectedTrgtDevice "+$parent)
+		-annotation "Remove the highlighted item(s) from the list."
+		-width 96
+		("AEdynTargetDevice"+"removeItemsButton");
+*/
+	dyntargetDeviceAE_updateListWithCurrentSelection( $mainListName, $dynTargetDevice );
+
+	setParent ..;
+}

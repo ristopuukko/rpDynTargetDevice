@@ -1,0 +1,25 @@
+TdrawOgl
+v7
+r1
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Debug/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Debug/drawOgl.bundle
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Debug/drawOgl.build/Script-8A7F063408688F870064D097.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/usr/local/lib/$PRODUCT_NAME.bundle
+t2
+s0
+
+CPhaseScriptExecution "Run Script" /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Debug/drawOgl.build/Script-8A7F063408688F870064D097.sh
+r0
+

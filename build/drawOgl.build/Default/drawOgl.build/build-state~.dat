@@ -1,0 +1,807 @@
+TdrawOgl
+v7
+r0
+t361263160.338215
+cCheck dependencies
+cProcessPCH++ /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h.gch /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/pluginMain.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOglManip.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/oglRoutines.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/M3dView.h
+c000000004C3C259E00000000000041E5
+t1279010206
+s16869
+i<maya/MStatus.h>
+i<maya/MObject.h>
+i<maya/MColor.h>
+i<maya/MNativeWindowHdl.h>
+i<OpenGL/gl.h>
+i<AGL/agl.h>
+i<agl.h>
+i<GL/glx.h>
+i<X11/Intrinsic.h>
+i"winsock2.h"
+i"windows.h"
+i<gl/Gl.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MApiVersion.h
+c000000004C3C259E000000000000096B
+t1279010206
+s2411
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MArrayDataBuilder.h
+c000000004C3C259E000000000000102D
+t1279010206
+s4141
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataHandle.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MArrayDataHandle.h
+c000000004C3C259E00000000000011DF
+t1279010206
+s4575
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<string.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataBuilder.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MBoundingBox.h
+c000000004C3C259E0000000000000DB8
+t1279010206
+s3512
+i<maya/MTypes.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MColor.h
+c000000004C3C259E00000000000027FA
+t1279010206
+s10234
+i<maya/MTypes.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDGContext.h
+c000000004C3C259E0000000000000E68
+t1279010206
+s3688
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDagPath.h
+c000000004C3C259E000000000000175E
+t1279010206
+s5982
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDataBlock.h
+c000000004C3C259E000000000000114C
+t1279010206
+s4428
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDataHandle.h>
+i<maya/MArrayDataHandle.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDataHandle.h
+c000000004C3C259E0000000000002B93
+t1279010206
+s11155
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<string.h>
+i<maya/MFnNumericData.h>
+i<maya/MFnData.h>
+i<maya/MTypeId.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDistance.h
+c000000004C3C259E0000000000000FFA
+t1279010206
+s4090
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MDoubleArray.h
+c000000004C3C259E0000000000001177
+t1279010206
+s4471
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MEvent.h
+c000000004C3C259E0000000000001476
+t1279010206
+s5238
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFn.h
+c000000004C3C259E0000000000009B20
+t1279010206
+s39712
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnAttribute.h
+c000000004C3C259E00000000000019F0
+t1279010206
+s6640
+i<maya/MFnBase.h>
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnBase.h
+c000000004C3C259E0000000000001F19
+t1279010206
+s7961
+i<maya/MFn.h>
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDagNode.h
+c000000004C3C259E0000000000002222
+t1279010206
+s8738
+i<maya/MFnDependencyNode.h>
+i<maya/MObject.h>
+i<stdlib.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnData.h
+c000000004C3C259E0000000000001599
+t1279010206
+s5529
+i<maya/MFnBase.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDependencyNode.h
+c000000004C3C259E000000000000293A
+t1279010206
+s10554
+i<maya/MFnBase.h>
+i<maya/MTypeId.h>
+i<maya/MString.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnDistanceManip.h
+c000000004C3C259E0000000000000F0C
+t1279010206
+s3852
+i<maya/MFnBase.h>
+i<maya/MFnManip3D.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnManip3D.h
+c000000004C3C259E0000000000000E11
+t1279010206
+s3601
+i<maya/MFnTransform.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnNumericAttribute.h
+c000000004C3C259E0000000000001BBE
+t1279010206
+s7102
+i<maya/MFnAttribute.h>
+i<maya/MFnNumericData.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnNumericData.h
+c000000004C3C259E0000000000001B1A
+t1279010206
+s6938
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnPlugin.h
+c000000004C3C259E0000000000003307
+t1279010206
+s13063
+i<maya/MFnBase.h>
+i<maya/MApiVersion.h>
+i<maya/MPxNode.h>
+i<maya/MPxData.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnStringData.h
+c000000004C3C259E0000000000000DCF
+t1279010206
+s3535
+i<maya/MFnData.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnTransform.h
+c000000004C3C259E0000000000003377
+t1279010206
+s13175
+i<maya/MFnDagNode.h>
+i<maya/MTransformationMatrix.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MFnUnitAttribute.h
+c000000004C3C259E00000000000019C7
+t1279010206
+s6599
+i<maya/MFnAttribute.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MGLdefinitions.h
+c000000004C3C259E0000000000017900
+t1279010206
+s96512
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MGlobal.h
+c000000004C3C259E00000000000036C5
+t1279010206
+s14021
+i<maya/MIntArray.h>
+i<maya/MDoubleArray.h>
+i<maya/MString.h>
+i<maya/MStringArray.h>
+i<maya/MObject.h>
+i<maya/MStatus.h>
+i<maya/MSelectionMask.h>
+i<maya/MTransformationMatrix.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIOStream.h
+c000000004C3C259E0000000000000A40
+t1279010206
+s2624
+i<maya/MIOStreamFwd.h>
+i<iostream>
+i<iostream.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIOStreamFwd.h
+c000000004C3C259E00000000000008D8
+t1279010206
+s2264
+i<iosfwd>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MIntArray.h
+c000000004C3C259E0000000000000F89
+t1279010206
+s3977
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MManipData.h
+c000000004C3C259E0000000000000E0B
+t1279010206
+s3595
+i<maya/MStatus.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MNativeWindowHdl.h
+c000000004C3C259E0000000000000B9D
+t1279010206
+s2973
+i<maya/MTypes.h>
+i<X11/Intrinsic.h>
+i"winsock2.h"
+i"windows.h"
+i<Carbon/Carbon.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MObject.h
+c000000004C3C259E0000000000001FEE
+t1279010206
+s8174
+i<maya/MFn.h>
+i<maya/MTypes.h>
+i<stdio.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MObjectArray.h
+c000000004C3C259E0000000000000EBB
+t1279010206
+s3771
+i<maya/MObject.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPlug.h
+c000000004C3C259E00000000000041E4
+t1279010206
+s16868
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MDGContext.h>
+i<maya/MObject.h>
+i<maya/MIntArray.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPoint.h
+c000000004C3C259E00000000000038C0
+t1279010206
+s14528
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+i<maya/MVector.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxContext.h
+c000000004C3C259E0000000000001DF6
+t1279010206
+s7670
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MEvent.h>
+i<maya/MString.h>
+i<maya/MSyntax.h>
+i<maya/MObject.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxData.h
+c000000004C3C259E00000000000019B5
+t1279010206
+s6581
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxLocatorNode.h
+c000000004C3C259E0000000000001C7C
+t1279010206
+s7292
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MPxNode.h>
+i<maya/M3dView.h>
+i<maya/MBoundingBox.h>
+i<maya/M3dView.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxManipContainer.h
+c000000004C3C259E0000000000002729
+t1279010206
+s10025
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MPxNode.h>
+i<maya/MPlug.h>
+i<maya/MPoint.h>
+i<maya/MVector.h>
+i<maya/MTypeId.h>
+i<maya/MString.h>
+i<maya/M3dView.h>
+i<maya/MDagPath.h>
+i<maya/MObjectArray.h>
+i<maya/MManipData.h>
+i<maya/MPxManipulatorNode.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxManipulatorNode.h
+c000000004C3C259E000000000000192F
+t1279010206
+s6447
+i<maya/MPxNode.h>
+i<maya/MTypes.h>
+i<maya/MGLdefinitions.h>
+i<maya/M3dView.h>
+i<maya/MDagPath.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxNode.h
+c000000004C3C259E0000000000002385
+t1279010206
+s9093
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+i<maya/MObject.h>
+i<maya/MTypeId.h>
+i<maya/MDataHandle.h>
+i<maya/MDataBlock.h>
+i<maya/MPlug.h>
+i<maya/MString.h>
+i<maya/MDGContext.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MPxSelectionContext.h
+c000000004C3C259E0000000000001218
+t1279010206
+s4632
+i<maya/MPxContext.h>
+i<maya/MPoint.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MSelectionMask.h
+c000000004C3C259E0000000000001AAB
+t1279010206
+s6827
+i<maya/MObject.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MStatus.h
+c000000004C3C259E00000000000029CC
+t1279010206
+s10700
+i<maya/MTypes.h>
+i<maya/MIOStream.h>
+i<maya/MIOStreamFwd.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MString.h
+c000000004C3C259E0000000000001C31
+t1279010206
+s7217
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MStringArray.h
+c000000004C3C259E000000000000107B
+t1279010206
+s4219
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MSyntax.h
+c000000004C3C259E0000000000001AA9
+t1279010206
+s6825
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTransformationMatrix.h
+c000000004C3C259E0000000000002C09
+t1279010206
+s11273
+i<maya/MStatus.h>
+i<maya/MTypes.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTypeId.h
+c000000004C3C259E000000000000137F
+t1279010206
+s4991
+i<maya/MTypes.h>
+i<maya/MStatus.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MTypes.h
+c000000004C3C259E0000000000003EB9
+t1279010206
+s16057
+i<winsock2.h>
+i"windows.h"
+i<sys/types.h>
+i<sys/stat.h>
+i<basetsd.h>
+i<inttypes.h>
+i<stdarg.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/MVector.h
+c000000004C3C259E0000000000003F5F
+t1279010206
+s16223
+i<maya/MTypes.h>
+i<maya/MTransformationMatrix.h>
+i<math.h>
+
+N/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h
+c000000004C3C259E0000000000000C07
+t1279010206
+s3079
+i<AvailabilityMacros.h>
+i<sys/param.h>
+i<CoreServices/CoreServices.h>
+
+N/Developer/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004CC3CD1000000000000010DD
+t1287900432
+s4317
+
+N/System/Library/Frameworks/AGL.framework/Headers/agl.h
+c000000004CC42B120000000000005074
+t1287924498
+s20596
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004CC41EA700000000000005FF
+t1287921319
+s1535
+
+N/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004CC3FFFE0000000000000401
+t1287913470
+s1025
+
+N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004CC42BAC000000000000578C
+t1287924652
+s22412
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004BD2501F0000000000025B59
+t1272074271
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/Users/Shared/Autodesk/maya/plug-ins/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/$PRODUCT_NAME.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/drawOgl.bundle
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/drawOgl.bundle-x86_64-master.o
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.LinkFileList
+c000000004FD838B50000000000000097
+t1339570357
+s151
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.o
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOglManip.o
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/oglRoutines.o
+t2
+s0
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/pluginMain.o
+t1339570359
+s163704
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Script-8A7F063408688F870064D097.sh
+c000000004FD838B500000000000000C6
+t1339570357
+s198
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp
+c000000004FD838AE00000000000014F8
+t1339570350
+s5368
+i"drawOgl.h"
+i<maya/MGlobal.h>
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.h
+c000000004FD836450000000000000977
+t1339569733
+s2423
+i<maya/MPxLocatorNode.h>
+i<maya/MFnNumericAttribute.h>
+i<maya/MFnStringData.h>
+i<maya/MTypeId.h>
+i<maya/MPlug.h>
+i<maya/MDataBlock.h>
+i<maya/MDataHandle.h>
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp
+c000000004FD838240000000000000AB5
+t1339570212
+s2741
+i"drawOglManip.h"
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.h
+c000000004FD836E90000000000000570
+t1339569897
+s1392
+i<maya/MIOStream.h>
+i<maya/MString.h>
+i<maya/MTypeId.h>
+i<maya/MPlug.h>
+i<maya/MVector.h>
+i<maya/MDataBlock.h>
+i<maya/MDataHandle.h>
+i<maya/MColor.h>
+i<maya/M3dView.h>
+i<maya/MFnPlugin.h>
+i<maya/MDistance.h>
+i<maya/MFnUnitAttribute.h>
+i<maya/MFn.h>
+i<maya/MPxNode.h>
+i<maya/MPxManipContainer.h>
+i<maya/MFnDistanceManip.h>
+i<maya/MPxContext.h>
+i<maya/MPxSelectionContext.h>
+i<maya/MFnNumericData.h>
+i<maya/MManipData.h>
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp
+c000000004FD8368300000000000025D9
+t1339569795
+s9689
+i"oglRoutines.h"
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.h
+c000000004FD8355D00000000000000D1
+t1339569501
+s209
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GLUT/glut.h>
+
+N/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp
+c000000004FD8301B000000000000059A
+t1339568155
+s1434
+i<maya/MFnPlugin.h>
+i"drawOgl.h"
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/X11/Intrinsic.h
+c000000004CC416DA000000000000F805
+t1287919322
+s63493
+
+N/usr/include/inttypes.h
+c000000004BBD2CE900000000000027D1
+t1270689001
+s10193
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/usr/include/sys/param.h
+c000000004CC3DE6700000000000027BE
+t1287904871
+s10174
+
+N/usr/include/sys/stat.h
+c000000004CC3DE680000000000004A1D
+t1287904872
+s18973
+
+N/usr/include/sys/types.h
+c000000004CC3DE680000000000002905
+t1287904872
+s10501
+
+N/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h.gch
+t1339570358
+s24443024
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies361263156#361263157#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s361263158.972825
+e361263159.684680
+r0
+xCompileC
+xbuild/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.o
+x/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp: In member function 'virtual void drawOgl::draw(M3dView&, const MDagPath&, M3dView::DisplayStyle, M3dView::DisplayStatus)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:131: error: aggregate 'MDistance sizeVal' has incomplete type and cannot be defined
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:142: error: 'drawSphere' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp: In member function 'virtual MBoundingBox drawOgl::boundingBox() const':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:161: error: aggregate 'MDistance sizeVal' has incomplete type and cannot be defined
+lSLF07#2@82"Compile /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp361263158#361263159#0(796"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp: In member function 'virtual void drawOgl::draw(M3dView&, const MDagPath&, M3dView::DisplayStyle, M3dView::DisplayStatus)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:131: error: aggregate 'MDistance sizeVal' has incomplete type and cannot be defined/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:142: error: 'drawSphere' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp: In member function 'virtual MBoundingBox drawOgl::boundingBox() const':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp:161: error: aggregate 'MDistance sizeVal' has incomplete type and cannot be defined3(4@71"Aggregate 'MDistance sizeVal' has incomplete type and cannot be defined361263159#199#159#0(6@74"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp361263150#131#0#131#0#0"0(4@43"'drawSphere' was not declared in this scope361263159#358#131#0(6@74"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp361263150#142#0#142#0#34"'*' was not declared in this scope0(4@71"Aggregate 'MDistance sizeVal' has incomplete type and cannot be defined361263159#637#159#0(6@74"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp361263150#161#0#161#0#0"0(0#0#74"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp8613691904#1302"    cd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/drawOgl.hmap -F/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOgl.cpp -o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOgl.o1#
+
+CCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOglManip.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s361263159.684784
+e361263160.338127
+r0
+xCompileC
+xbuild/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOglManip.o
+x/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp:37: error: redefinition of 'MTypeId drawOglManip::id'
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp:12: error: 'MTypeId drawOglManip::id' previously declared here
+lSLF07#2@87"Compile /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp361263159#361263160#0(277"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp:37: error: redefinition of 'MTypeId drawOglManip::id'/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp:12: error: 'MTypeId drawOglManip::id' previously declared here2(4@42"Redefinition of 'MTypeId drawOglManip::id'361263160#0#134#0(6@79"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp361263012#37#0#37#0#19"redefinition of '*'0(13@51"'MTypeId drawOglManip::id' previously declared here361263160#134#143#0(6@79"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp361263012#12#0#12#0#0"0(0#0#79"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp3917909816998063104#1312"    cd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/drawOgl.hmap -F/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/drawOglManip.cpp -o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/drawOglManip.o1#
+
+CCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/oglRoutines.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s361263159.794148
+e361263159.911272
+r0
+xCompileC
+xbuild/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/oglRoutines.o
+x/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:12: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawSphere(float)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:13: error: 'DrawCircleXY' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:14: error: 'DrawCircleXZ' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:15: error: 'DrawCircleYZ' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:23: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:31: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:39: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:52: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:60: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:68: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:77: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:85: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:93: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:102: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:131: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:164: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderXY(float, float)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:168: error: 'DrawCircleXY' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:189: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCone(float, float)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:193: error: 'DrawCircleXZ' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:210: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderXZ(float, float)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:214: error: 'DrawCircleXZ' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:235: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderYZ(float, float)':
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:239: error: 'DrawCircleYZ' was not declared in this scope
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:265: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:276: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:287: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:298: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:309: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:320: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:338: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:341: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:344: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:356: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:379: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:402: error: 'drawOgl' has not been declared
+o/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:425: error: expected constructor, destructor, or type conversion at end of input
+lSLF07#2@86"Compile /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361263159#361263159#0(5663"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:12: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawSphere(float)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:13: error: 'DrawCircleXY' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:14: error: 'DrawCircleXZ' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:15: error: 'DrawCircleYZ' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:23: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:31: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:39: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:52: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:60: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:68: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:77: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:85: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:93: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:102: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:131: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:164: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderXY(float, float)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:168: error: 'DrawCircleXY' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:189: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCone(float, float)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:193: error: 'DrawCircleXZ' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:210: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderXZ(float, float)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:214: error: 'DrawCircleXZ' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:235: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: In function 'void DrawCylinderYZ(float, float)':/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:239: error: 'DrawCircleYZ' was not declared in this scope/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp: At global scope:/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:265: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:276: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:287: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:298: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:309: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:320: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:338: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:341: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:344: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:356: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:379: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:402: error: 'drawOgl' has not been declared/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp:425: error: expected constructor, destructor, or type conversion at end of input41(4@31"'drawOgl' has not been declared361263159#0#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#12#0#12#0#25"'*' has not been declared0(4@45"'DrawCircleXY' was not declared in this scope361263159#240#136#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#13#0#13#0#34"'*' was not declared in this scope0(4@45"'DrawCircleXZ' was not declared in this scope361263159#376#136#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#14#0#14#0#34"'*' was not declared in this scope0(4@45"'DrawCircleYZ' was not declared in this scope361263159#512#136#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#15#0#15#0#34"'*' was not declared in this scope0(23@16"At global scope:361263159#648#97#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#0#0#0#0#0"0(4@31"'drawOgl' has not been declared361263159#745#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#23#0#23#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#867#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#31#0#31#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#989#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#39#0#39#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1111#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#52#0#52#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1233#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#60#0#60#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1355#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#68#0#68#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1477#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#77#0#77#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1599#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#85#0#85#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1721#122#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#93#0#93#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1843#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#102#0#102#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#1966#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#131#0#131#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#2089#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#164#0#164#0#25"'*' has not been declared0(4@45"'DrawCircleXY' was not declared in this scope361263159#2341#137#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#168#0#168#0#34"'*' was not declared in this scope0(23@16"At global scope:361263159#2478#97#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#0#0#0#0#0"0(4@31"'drawOgl' has not been declared361263159#2575#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#189#0#189#0#25"'*' has not been declared0(4@45"'DrawCircleXZ' was not declared in this scope361263159#2821#137#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#193#0#193#0#34"'*' was not declared in this scope0(23@16"At global scope:361263159#2958#97#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#0#0#0#0#0"0(4@31"'drawOgl' has not been declared361263159#3055#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#210#0#210#0#25"'*' has not been declared0(4@45"'DrawCircleXZ' was not declared in this scope361263159#3307#137#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#214#0#214#0#34"'*' was not declared in this scope0(23@16"At global scope:361263159#3444#97#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#0#0#0#0#0"0(4@31"'drawOgl' has not been declared361263159#3541#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#235#0#235#0#25"'*' has not been declared0(4@45"'DrawCircleYZ' was not declared in this scope361263159#3793#137#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#239#0#239#0#34"'*' was not declared in this scope0(23@16"At global scope:361263159#3930#97#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#0#0#0#0#0"0(4@31"'drawOgl' has not been declared361263159#4027#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#265#0#265#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4150#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#276#0#276#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4273#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#287#0#287#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4396#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#298#0#298#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4519#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#309#0#309#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4642#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#320#0#320#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4765#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#338#0#338#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#4888#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#341#0#341#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#5011#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#344#0#344#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#5134#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#356#0#356#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#5257#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#379#0#379#0#25"'*' has not been declared0(4@31"'drawOgl' has not been declared361263159#5380#123#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#402#0#402#0#25"'*' has not been declared0(4@68"Expected constructor, destructor, or type conversion at end of input361263159#5503#160#0(6@78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp361262595#425#0#425#0#0"0(0#0#78"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp8615458944#1310"    cd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/drawOgl.hmap -F/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/oglRoutines.cpp -o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/oglRoutines.o1#
+
+CCompileC build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/pluginMain.o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s361263158.974303
+e361263159.794037
+r1
+xCompileC
+xbuild/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/pluginMain.o
+x/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp361263158#361263159#0(0"0(0#0#77"/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp8612577312#1308"    cd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/drawOgl.hmap -F/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources -include /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h -c /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/pluginMain.cpp -o /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/x86_64/pluginMain.o0#
+
+CLd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/drawOgl.bundle normal x86_64
+r0
+
+CMasterObjectLink /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Objects-normal/drawOgl.bundle-x86_64-master.o
+r0
+
+CPhaseScriptExecution "Run Script" /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/Script-8A7F063408688F870064D097.sh
+r0
+
+CProcessPCH++ /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h.gch /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+s361263157.166476
+e361263158.972300
+r1
+xProcessPCH++
+x/var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h.gch
+x/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Precompile /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h361263157#361263158#0(0"0(0#0#65"/Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h3472945436609556480#1158"    cd /Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -DMAC_PLUGIN -D_BOOL -DREQUIRE_IOSTREAM -fvisibility-inlines-hidden -gdwarf-2 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/drawOgl.hmap -F/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/Default/include -I/Applications/Autodesk/maya2011/devkit/include -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources/x86_64 -I/Users/ristopuukko/Documents/maya_developement/drawOgl/drawOgl/build/drawOgl.build/Default/drawOgl.build/DerivedSources -c /Applications/Autodesk/maya2011/devkit/include/maya/OpenMayaMac.h -o /var/folders/CT/CTVXHQWNFFGWN513DIdI+U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OpenMayaMac-cybmimayllhtynbjrwdrwfodcsib/OpenMayaMac.h.gch0#
+

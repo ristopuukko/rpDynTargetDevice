@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6E6BBFC1013A31F005D1E0E /* rpDynTargetDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E6BBFB1013A31F005D1E0E /* rpDynTargetDevice.h */; };
+		F6E6BCA71013B566005D1E0E /* rpDynTargetDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E6BCA61013B566005D1E0E /* rpDynTargetDevice.cpp */; };
+		F6E6BCA91013B574005D1E0E /* pluginMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E6BCA81013B574005D1E0E /* pluginMain.cpp */; };
+		F90665731655040400E5CCBC /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = F906656D1655040400E5CCBC /* base.h */; };
+		F90665741655040400E5CCBC /* mat.h in Headers */ = {isa = PBXBuildFile; fileRef = F906656E1655040400E5CCBC /* mat.h */; };
+		F90665751655040400E5CCBC /* quat.h in Headers */ = {isa = PBXBuildFile; fileRef = F906656F1655040400E5CCBC /* quat.h */; };
+		F90665761655040400E5CCBC /* traits.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665701655040400E5CCBC /* traits.h */; };
+		F90665771655040400E5CCBC /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665711655040400E5CCBC /* util.h */; };
+		F90665781655040400E5CCBC /* vec.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665721655040400E5CCBC /* vec.h */; };
+		F906657A1655042800E5CCBC /* mathUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665791655042800E5CCBC /* mathUtils.h */; };
+		F9491883164FD5ED0069E126 /* randomize.h in Headers */ = {isa = PBXBuildFile; fileRef = F9491881164FD5ED0069E126 /* randomize.h */; };
+		F9491884164FD5ED0069E126 /* randomize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9491882164FD5ED0069E126 /* randomize.cpp */; };
+		F9A390A31588692300EE41C1 /* rpDynTargetDeviceManip.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */; };
+		F9A390A41588692300EE41C1 /* rpDynTargetDeviceManip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9A390A21588692300EE41C1 /* rpDynTargetDeviceManip.cpp */; };
+		F9A390C415886C8E00EE41C1 /* oglRoutines.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A390C215886C8E00EE41C1 /* oglRoutines.h */; };
+		F9A390C515886C8E00EE41C1 /* oglRoutines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9A390C315886C8E00EE41C1 /* oglRoutines.cpp */; };
+		F9A3911D1588717900EE41C1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A3911C1588717900EE41C1 /* OpenGL.framework */; };
+		F9A391C715887A7600EE41C1 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A391C615887A7600EE41C1 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E82225EF09BC2DCD00B66EB4 /* drawOgl.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = drawOgl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E6BBFB1013A31F005D1E0E /* rpDynTargetDevice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = rpDynTargetDevice.h; sourceTree = "<group>"; };
+		F6E6BCA61013B566005D1E0E /* rpDynTargetDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rpDynTargetDevice.cpp; sourceTree = "<group>"; };
+		F6E6BCA81013B574005D1E0E /* pluginMain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = pluginMain.cpp; sourceTree = "<group>"; };
+		F906656D1655040400E5CCBC /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		F906656E1655040400E5CCBC /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		F906656F1655040400E5CCBC /* quat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quat.h; sourceTree = "<group>"; };
+		F90665701655040400E5CCBC /* traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = traits.h; sourceTree = "<group>"; };
+		F90665711655040400E5CCBC /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		F90665721655040400E5CCBC /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
+		F90665791655042800E5CCBC /* mathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathUtils.h; sourceTree = "<group>"; };
+		F94704171591C24A000A05F0 /* AEdrawOglTemplate.mel.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AEdrawOglTemplate.mel.old; path = ../../../../../Shared/Autodesk/maya/scripts/AEdrawOglTemplate.mel.old; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.mel; };
+		F9491881164FD5ED0069E126 /* randomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randomize.h; sourceTree = "<group>"; };
+		F9491882164FD5ED0069E126 /* randomize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = randomize.cpp; sourceTree = "<group>"; };
+		F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpDynTargetDeviceManip.h; sourceTree = "<group>"; };
+		F9A390A21588692300EE41C1 /* rpDynTargetDeviceManip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rpDynTargetDeviceManip.cpp; sourceTree = "<group>"; };
+		F9A390C215886C8E00EE41C1 /* oglRoutines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oglRoutines.h; sourceTree = "<group>"; };
+		F9A390C315886C8E00EE41C1 /* oglRoutines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oglRoutines.cpp; sourceTree = "<group>"; };
+		F9A3911C1588717900EE41C1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		F9A391C615887A7600EE41C1 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A3911D1588717900EE41C1 /* OpenGL.framework in Frameworks */,
+				F9A391C715887A7600EE41C1 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* simpleNodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F96B92B11591163500A7E165 /* source */,
+				F96B92B01591162D00A7E165 /* mel */,
+				E82225BB09BC2ADF00B66EB4 /* Products */,
+				8A7F063308688F580064D097 /* Resources */,
+				F9A3911C1588717900EE41C1 /* OpenGL.framework */,
+				F9A391C615887A7600EE41C1 /* GLUT.framework */,
+			);
+			name = simpleNodePlugin;
+			sourceTree = "<group>";
+		};
+		8A7F063308688F580064D097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E82225BB09BC2ADF00B66EB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82225EF09BC2DCD00B66EB4 /* drawOgl.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F906656C1655040400E5CCBC /* mvl */ = {
+			isa = PBXGroup;
+			children = (
+				F906656D1655040400E5CCBC /* base.h */,
+				F906656E1655040400E5CCBC /* mat.h */,
+				F906656F1655040400E5CCBC /* quat.h */,
+				F90665701655040400E5CCBC /* traits.h */,
+				F90665711655040400E5CCBC /* util.h */,
+				F90665721655040400E5CCBC /* vec.h */,
+			);
+			path = mvl;
+			sourceTree = "<group>";
+		};
+		F96B92B01591162D00A7E165 /* mel */ = {
+			isa = PBXGroup;
+			children = (
+				F94704171591C24A000A05F0 /* AEdrawOglTemplate.mel.old */,
+			);
+			name = mel;
+			sourceTree = "<group>";
+		};
+		F96B92B11591163500A7E165 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F90665791655042800E5CCBC /* mathUtils.h */,
+				F906656C1655040400E5CCBC /* mvl */,
+				F6E6BCA81013B574005D1E0E /* pluginMain.cpp */,
+				F6E6BCA61013B566005D1E0E /* rpDynTargetDevice.cpp */,
+				F6E6BBFB1013A31F005D1E0E /* rpDynTargetDevice.h */,
+				F9A390A21588692300EE41C1 /* rpDynTargetDeviceManip.cpp */,
+				F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */,
+				F9A390C315886C8E00EE41C1 /* oglRoutines.cpp */,
+				F9A390C215886C8E00EE41C1 /* oglRoutines.h */,
+				F9491882164FD5ED0069E126 /* randomize.cpp */,
+				F9491881164FD5ED0069E126 /* randomize.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E6BBFC1013A31F005D1E0E /* rpDynTargetDevice.h in Headers */,
+				F9A390A31588692300EE41C1 /* rpDynTargetDeviceManip.h in Headers */,
+				F9A390C415886C8E00EE41C1 /* oglRoutines.h in Headers */,
+				F9491883164FD5ED0069E126 /* randomize.h in Headers */,
+				F90665731655040400E5CCBC /* base.h in Headers */,
+				F90665741655040400E5CCBC /* mat.h in Headers */,
+				F90665751655040400E5CCBC /* quat.h in Headers */,
+				F90665761655040400E5CCBC /* traits.h in Headers */,
+				F90665771655040400E5CCBC /* util.h in Headers */,
+				F90665781655040400E5CCBC /* vec.h in Headers */,
+				F906657A1655042800E5CCBC /* mathUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* rpDynTargetDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "rpDynTargetDevice" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+				8A7F063408688F870064D097 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rpDynTargetDevice;
+			productName = apiMeshShapePlugin;
+			productReference = E82225EF09BC2DCD00B66EB4 /* drawOgl.bundle */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+				ORGANIZATIONNAME = ristopuukko;
+			};
+			buildConfigurationList = 8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "rpDynTargetDevice" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* simpleNodePlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* rpDynTargetDevice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A7F063408688F870064D097 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "\nUse these commands to launch and load the plugin:\n. /Applications/Alias/maya2011/Maya.app/Contents/bin/MayaENV.sh;maya -command \"loadPlugin $PRODUCT_NAME;\";\n\nIf you want to run the debugger with Maya, just follow these steps.\n1. Right Click Executables from the Main Project Layout.\n2. Add->Custom Executable\n3. Enter some name for the first box, and browse for the maya version your are building against.\n4. Click \"Ok\"\n\nThat's it, now maya will launch every time your build, if you want the debugger, click \"Build and Debug\" You can also put breakpoints in your code.\n";
+			files = (
+			);
+			inputPaths = (
+				$TARGET_BUILD_DIR/$EXECUTABLE_PATH,
+			);
+			outputPaths = (
+				$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle,
+				$INSTALL_PATH/$PRODUCT_NAME.bundle,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle\"; cp \"$TARGET_BUILD_DIR/$PRODUCT_NAME.bundle\" \"/Users/Shared/Autodesk/Maya/plug-ins/$PRODUCT_NAME.bundle\";\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E6BCA71013B566005D1E0E /* rpDynTargetDevice.cpp in Sources */,
+				F6E6BCA91013B574005D1E0E /* pluginMain.cpp in Sources */,
+				F9A390A41588692300EE41C1 /* rpDynTargetDeviceManip.cpp in Sources */,
+				F9A390C515886C8E00EE41C1 /* oglRoutines.cpp in Sources */,
+				F9491884164FD5ED0069E126 /* randomize.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A7F05EE086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaFX",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = drawOgl;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		8A7F05EF086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaFX",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = drawOgl;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8A7F05F0086863A70064D097 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CURRENT_PROJECT_VERSION = 0.2;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bundle;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(MAYA_DIRECTORY)/devkit/plug-ins",
+					"$(MAYA_DIRECTORY)/devkit/include/",
+				);
+				INSTALL_PATH = "/Users/Shared/Autodesk/maya/2011/plug-ins/";
+				LIBRARY_STYLE = BUNDLE;
+				MACH_O_TYPE = mh_bundle;
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaFX",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = rpDynTargetDevice;
+				SDKROOT = "";
+			};
+			name = Default;
+		};
+		8A7F05F2086863A70064D097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		8A7F05F3086863A70064D097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		8A7F05F4086863A70064D097 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(MAYA_DIRECTORY)/devkit/include/maya/OpenMayaMac.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC_PLUGIN,
+					_BOOL,
+					REQUIRE_IOSTREAM,
+				);
+				HEADER_SEARCH_PATHS = "$(MAYA_DIRECTORY)/devkit/include/";
+				INSTALL_PATH = "/Users/Shared/Autodesk/maya/2011/plug-ins";
+				LIBRARY_SEARCH_PATHS = "$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS";
+				MAYA_DIRECTORY = /Applications/Autodesk/maya2011;
+				OTHER_LDFLAGS = (
+					"-lOpenMaya",
+					"-lFoundation",
+					"-Wl,-executable_path,$(MAYA_DIRECTORY)/Maya.app/Contents/MacOS",
+					"-lOpenMaya",
+					"-lOpenMayaUI",
+					"-lFoundation",
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				VALID_ARCHS = x86_64;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7F05ED086863A70064D097 /* Build configuration list for PBXNativeTarget "rpDynTargetDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05EE086863A70064D097 /* Debug */,
+				8A7F05EF086863A70064D097 /* Release */,
+				8A7F05F0086863A70064D097 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8A7F05F1086863A70064D097 /* Build configuration list for PBXProject "rpDynTargetDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7F05F2086863A70064D097 /* Debug */,
+				8A7F05F3086863A70064D097 /* Release */,
+				8A7F05F4086863A70064D097 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
