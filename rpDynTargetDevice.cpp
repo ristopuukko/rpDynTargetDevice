@@ -494,6 +494,8 @@ vec3f rpDynTargetDevice::getPositionFromdArray(MObject node, int index) {
 		//cout << "posData["<<index<<"] : " << posData << endl;
 	}
 
+    free(xyz);
+    
 	return vec3f(posData.x,posData.y,posData.z);
 	
 	
