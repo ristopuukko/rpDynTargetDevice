@@ -471,13 +471,14 @@ vec3f rpDynTargetDevice::getPositionFromdArray(MObject node, int index) {
 	MPlug plug_xyz;
 	if (trPosPlug.isCompound()) {
 		for(unsigned i=0; i<3;i++) {
-		plug_xyz = trPosPlug.child(i);
-		plug_xyz.getValue(xyz[i]);
+            plug_xyz = trPosPlug.child(i);
+            plug_xyz.getValue(xyz[i]);
+            cout<<" translate["<<i<<"] = "<<xyz[i]<<endl;
 		}
 	}
 	
 	if(!posArrayPlug.isArray()) {
-		MGlobal::displayError("Something wrong with the connections between dRigidBody.msg -> rpDynTargetDeviceShape.inputRigids[]");
+		MGlobal::displayError("Something wrong with the connections between bRigidBody.msg -> rpDynTargetDeviceShape.inputRigids[]");
 		return vec3f(-1);
 	}
 	
@@ -489,9 +490,9 @@ vec3f rpDynTargetDevice::getPositionFromdArray(MObject node, int index) {
 	if( status == MS::kSuccess && !posPlug.isNull() )
 	{
 		getFloat3PlugValue( posPlug, posData );
+        //cout << "before xyz - posData["<<index<<"] : " << posData << endl;
 		posData += MFloatVector( xyz[0], xyz[1], xyz[2]);
-		
-		//cout << "posData["<<index<<"] : " << posData << endl;
+        //cout << "after xyz  - posData["<<index<<"] : " << posData << endl;
 	}
 
     free(xyz);

@@ -73,5 +73,5 @@ install: $(LIBRARY)
 
 clean:
 	rm -f *.o *.bundle
-	rm -f $(MAYA_PLUG_IN_PATH)/plug-ins/$(LIBRARY)
-	rm -f $(MAYA_PLUG_IN_PATH)/scripts/$(MEL)
+#	rm -f $(MAYA_PLUG_IN_PATH)/plug-ins/$(LIBRARY)
+#	rm -f $(MAYA_PLUG_IN_PATH)/scripts/$(MEL)
