@@ -17,6 +17,7 @@
 		F90665771655040400E5CCBC /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665711655040400E5CCBC /* util.h */; };
 		F90665781655040400E5CCBC /* vec.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665721655040400E5CCBC /* vec.h */; };
 		F906657A1655042800E5CCBC /* mathUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F90665791655042800E5CCBC /* mathUtils.h */; };
+		F91B988C1AD5C20A00A251A1 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = F91B988B1AD5C20A00A251A1 /* Makefile */; };
 		F9491883164FD5ED0069E126 /* rpDynTargetDeviceCmds.h in Headers */ = {isa = PBXBuildFile; fileRef = F9491881164FD5ED0069E126 /* rpDynTargetDeviceCmds.h */; };
 		F9491884164FD5ED0069E126 /* rpDynTargetDeviceCmds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9491882164FD5ED0069E126 /* rpDynTargetDeviceCmds.cpp */; };
 		F9A390A31588692300EE41C1 /* rpDynTargetDeviceManip.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */; };
@@ -39,6 +40,7 @@
 		F90665711655040400E5CCBC /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		F90665721655040400E5CCBC /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vec.h; sourceTree = "<group>"; };
 		F90665791655042800E5CCBC /* mathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathUtils.h; sourceTree = "<group>"; };
+		F91B988B1AD5C20A00A251A1 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		F9491881164FD5ED0069E126 /* rpDynTargetDeviceCmds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpDynTargetDeviceCmds.h; sourceTree = "<group>"; };
 		F9491882164FD5ED0069E126 /* rpDynTargetDeviceCmds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rpDynTargetDeviceCmds.cpp; sourceTree = "<group>"; };
 		F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpDynTargetDeviceManip.h; sourceTree = "<group>"; };
@@ -47,7 +49,6 @@
 		F9A390C315886C8E00EE41C1 /* oglRoutines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oglRoutines.cpp; sourceTree = "<group>"; };
 		F9A3911C1588717900EE41C1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		F9A391C615887A7600EE41C1 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
-		F9C3B1F31A0264BF007E0B9B /* Makefile_2014 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile_2014; sourceTree = "<group>"; };
 		F9C6A68A1A0232CE00D3DCC2 /* AErpDynTargetDeviceTemplate.mel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AErpDynTargetDeviceTemplate.mel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +121,8 @@
 				F906656C1655040400E5CCBC /* mvl */,
 				F6E6BCA81013B574005D1E0E /* pluginMain.cpp */,
 				F6E6BCA61013B566005D1E0E /* rpDynTargetDevice.cpp */,
+				F91B988B1AD5C20A00A251A1 /* Makefile */,
 				F6E6BBFB1013A31F005D1E0E /* rpDynTargetDevice.h */,
-				F9C3B1F31A0264BF007E0B9B /* Makefile_2014 */,
 				F9A390A21588692300EE41C1 /* rpDynTargetDeviceManip.cpp */,
 				F9A390A11588692300EE41C1 /* rpDynTargetDeviceManip.h */,
 				F9A390C315886C8E00EE41C1 /* oglRoutines.cpp */,
@@ -228,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91B988C1AD5C20A00A251A1 /* Makefile in Sources */,
 				F6E6BCA71013B566005D1E0E /* rpDynTargetDevice.cpp in Sources */,
 				F6E6BCA91013B574005D1E0E /* pluginMain.cpp in Sources */,
 				F9A390A41588692300EE41C1 /* rpDynTargetDeviceManip.cpp in Sources */,
