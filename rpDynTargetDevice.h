@@ -57,11 +57,12 @@
 ///
 
 #include "mathUtils.h"
-
-
 #include "api_macros.h"
-
 #define PI 3.14159265
+
+#define RB_ENGINE_UNDEFINED 0;
+#define RB_ENGINE_DYNAMICA 1;
+#define RB_ENGINE_BOING 2;
 
 using namespace std;
 
@@ -90,8 +91,9 @@ public:
 	virtual double			random(double start, double end);
 	virtual vec3f			sphrand();//return random vector inside iaRadius
 	virtual double			linstep(double start, double end, double arg);
-	virtual vec3f			getPosition(MPlug plug);
-    virtual float           getLinDamp(MPlug plug);
+	virtual vec3f			getPosition(MPlug &plug);
+    virtual float           getLinDamp(MPlug &plug);
+    virtual float           getTimeStep(MPlug &plug);
 	virtual vec3f			getPositionFromdArray(MObject node, int index);
 	virtual vec3f			calcVelocity(vec3f eDistance, float range, float height);
 	virtual	MStatus			getFloat3PlugValue( MPlug plug, MFloatVector & value );
@@ -177,7 +179,7 @@ private:
 	int			displayPercentage;
 	float		curveOpacity;
 	bool		dRigidArrayConnected;
-    int         rb_motor; // 0=undefined, 1=dynamica, 2=boing
+    int         rb_motor;
 	/// RBD data structure
 	///
 	struct RBD_DATA {

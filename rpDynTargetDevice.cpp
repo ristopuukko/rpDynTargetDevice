@@ -399,13 +399,14 @@ MStatus rpDynTargetDevice::connectionMade (const MPlug &plug, const MPlug &other
     //rb_motor
     
 	if ( checkConnection(otherPlug) ) {
-        if ( otherNodeFn.typeName() == "bSolver" && connected == "gravityY")
-            rb_motor = 2;
-        else if (otherNodeFn.typeName() == "dSolver" && connected == "gravityY")
-            rb_motor = 1;
-		stat = MS::kUnknownParameter;
+        if ( otherNodeFn.typeName() == "bSolver" && connected == "gravityY" ) {
+            rb_motor = RB_ENGINE_DYNAMICA;
+        } else if (otherNodeFn.typeName() == "dSolver" && connected == "gravityY" ) {
+            rb_motor = RB_ENGINE_BOING;
+        }
+        stat = MS::kUnknownParameter;
 	} else {
-        rb_motor = 0;
+        rb_motor = RB_ENGINE_UNDEFINED;
  		stat =  MS::kFailure;
 	}
 	
@@ -502,7 +503,7 @@ vec3f rpDynTargetDevice::getPositionFromdArray(MObject node, int index) {
 	
 }
 //calculate position based on iaInputRigids element plug
-vec3f rpDynTargetDevice::getPosition(MPlug plug) {
+vec3f rpDynTargetDevice::getPosition(MPlug &plug) {
 	
 #ifdef _DEBUG
 	//cout << "plug.info() in calcPosition : "<<plug.info()<<endl;
@@ -541,12 +542,28 @@ vec3f rpDynTargetDevice::getPosition(MPlug plug) {
 	return position;
 }
 
-float rpDynTargetDevice::getLinDamp(MPlug plug)
+float rpDynTargetDevice::getTimeStep(MPlug &plug) {
+
+    MFnDagNode rbFn(plug.node());
+    MPlug rbSolverPlug = rbFn.findPlug(MString("solver"));
+    MPlugArray plugs;
+    rbSolverPlug.connectedTo(plugs, false, true);
+    MFnDagNode dShapeFn(plugs[0].node());
+    //MPlug timeStepPlug = dShapeFn.findPlug("timeStep");
+    cout << "solver in getTimeStep : "<<dShapeFn.name()<<endl;
+
+    //MPlug stepPlug = dShapeFn.findPlug("timeStep");
+    
+    return .1f;
+    
+}
+
+float rpDynTargetDevice::getLinDamp(MPlug &plug)
 {
 	
 #ifdef _DEBUG
 	//cout << "plug.info() in getLinDamp : "<<plug.info()<<endl;
-	//cout << "plug.name() in getLinDamp : "<<plug.name()<<endl;
+    //cout << "plug.info() in getLinDamp : "<<plug.info()<<endl;
 #endif
 	MPlugArray plugs;
 	plug.connectedTo(plugs,true,false);
@@ -917,13 +934,15 @@ MStatus rpDynTargetDevice::compute( const MPlug& plug, MDataBlock& data )
 #endif
 					 //}
 					 vec3f position;
-                     float linearDamp = 0.0f;
+                     float linearDamp = 0.f;
+                     float timeStep =0.f;
 #ifdef _DEBUG
 					 //cout << "dRigidArrayConnected : "<<dRigidArrayConnected<<endl;
 #endif
 					 if (!dRigidArrayConnected) {
 						 position = getPosition(calcPlug);
                          linearDamp = getLinDamp(calcPlug);
+                         timeStep = getTimeStep(calcPlug);
 #ifdef _DEBUG
                          //cout<< "position["<<i<<" = "<<position<<endl;
                          //cout<< "linearDamp["<<i<<" = "<<linearDamp<<endl;
@@ -960,7 +979,7 @@ MStatus rpDynTargetDevice::compute( const MPlug& plug, MDataBlock& data )
                      // timeStep = 1 / subSteps ie. 1/10
 					 
                      
-                     vel = vel / pow((1 + linearDamp), (1/10));
+                     vel = vel / pow((1 + linearDamp), timeStep);
 #ifdef _DEBUG
 					 //cout <<"vel["<<i<<"] = "<<vel<<endl;
 #endif
